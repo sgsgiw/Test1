@@ -441,7 +441,7 @@
         startBtn.addEventListener('click', async () => {
             try {
                 cameraStatus.textContent = "Accessing camera...";
-                stream = await navigator.mediaDevices.getUser Media({
+                stream = await navigator.mediaDevices.getUserMedia({
                     video: {
                         width: { ideal: 640 },
                         height: { ideal: 480 },
